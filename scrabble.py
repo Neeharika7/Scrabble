@@ -2,7 +2,7 @@ def count_letters(word):
   count = {} 
   for letter in word:
     if letter not in count: count[letter] = 0
-    count[letter] += 1 
+    count[letter] = count[letter] + 1 
   return count 
 
 def spellable(word, rack):
